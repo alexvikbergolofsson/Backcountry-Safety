@@ -1,0 +1,7 @@
+.env
+.env.local
+*.secret
+service-account.json
+# Flutter/Android/iOS specific secret files
+**/ios/Runner/Info.plist
+**/android/key.properties
