@@ -2,6 +2,18 @@
 .env.local
 *.secret
 service-account.json
-# Flutter/Android/iOS specific secret files
+
+# Secrets inside platforms
 **/ios/Runner/Info.plist
 **/android/key.properties
+
+# Allow Jules to see the setup script
+!/scripts/
+/scripts/*
+!/scripts/setup_env.sh
+
+# Keep JSONs ignored except the configs
+*.json
+!package.json
+!firebase.json
+!package-lock.json
