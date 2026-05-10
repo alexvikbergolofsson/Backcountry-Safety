@@ -1,6 +1,6 @@
 # Agent Skills & Operational Boundaries
 
-## 1. Safety Execution Policy
+## 1. Stability Execution Policy
 **STRICT DENY (Never execute):**
 - System destructive commands: `rm -rf /`, `rm -rf $HOME`, `mkfs`, `dd`, `fdisk`, `parted`, `reboot`, `shutdown`.
 - Security overrides: `chmod -R 777 /`, `chown`, `ufw disable`, `iptables -F`.
@@ -21,7 +21,7 @@
 - **Layers:** `sluttningar_fjallen` (Slope), `sluttningsriktning_fjallen` (Aspect).
 - **Implementation:** Use Mapbox Raster Source to tile these WMS layers over the 3D terrain.
 
-## 3. Linguistic Safety Linter
-- Agents must intercept any UI string or AI response containing "Safe" or "Säker".
+## 3. Linguistic Stability Linter
+- Agents must intercept any UI string or AI response containing "S*fe" or "S*ker".
 - Replace with: "Lower Likelihood", "Within Forecast", or "Stable Trend".
-- Logic: High-resolution data (2m) allows for "High Confidence" scoring, but never "Safety" guarantees.
+- Logic: High-resolution data (2m) allows for "High Confidence" scoring, but never "Stability" guarantees.
