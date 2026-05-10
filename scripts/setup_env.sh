@@ -18,13 +18,13 @@ fi
 # --- ORIGINAL LOGIC ---
 echo "Setting up Firebase environment..."
 # Using --non-interactive to prevent Jules from getting stuck on login prompts
-firebase use backcountry-safety-prod --non-interactive || echo "Firebase project switch failed, check credentials."
+firebase use backcountry-stability-prod --non-interactive || echo "Firebase project switch failed, check credentials."
 
 if [ ! -d "apps/consumer/lib" ]; then
   echo "Scaffolding Flutter app..."
   mkdir -p apps/consumer
   cd apps/consumer
-  flutter create . --org com.backcountry.safety --platforms=ios,android
+  flutter create . --org com.backcountry.stability --platforms=ios,android
   flutter pub add mapbox_gl firebase_core firebase_auth
   cd ../..
 else
