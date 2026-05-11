@@ -1,6 +1,6 @@
-# Safety & Liability Guardrails
+# Stability & Liability Guardrails
 
-## 1. The "Safe" Ban
+## 1. The Prohibited Terminology Ban
 - The word "Safe" (or "Säker") must NEVER be used in UI strings or AI responses regarding terrain.
 - Required phrasing: "Lower Likelihood of Incident," "Within Forecast Parameters," or "Terrain matches historical stability."
 
