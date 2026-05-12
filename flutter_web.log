@@ -1,0 +1,45 @@
+Resolving dependencies...
+Downloading packages...
+  archive 3.6.1 (4.0.9 available)
+  image 3.3.0 (4.8.0 available)
+  js 0.6.7 (0.7.2 available)
+  matcher 0.12.18 (0.12.20 available)
+  meta 1.17.0 (1.18.2 available)
+  test_api 0.7.9 (0.7.12 available)
+  vector_math 2.2.0 (2.3.0 available)
+  xml 6.6.1 (7.0.1 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+This application is not configured to build on the web.
+To add web support to a project, run `flutter create .`.
+Launching lib/main.dart on Web Server in debug mode...
+Waiting for connection from debug service on Web Server...
+/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_web-0.16.0/lib/src/mapbox_web_gl_platform.dart:47:8: Error: Undefined name 'platformViewRegistry'.
+    ui.platformViewRegistry.registerViewFactory(
+       ^^^^^^^^^^^^^^^^^^^^
+/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/src/camera.dart:83:23: Error: The method 'hashValues' isn't defined for the type 'CameraPosition'.
+ - 'CameraPosition' is from 'package:mapbox_gl_platform_interface/mapbox_gl_platform_interface.dart' ('/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/mapbox_gl_platform_interface.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'hashValues'.
+  int get hashCode => hashValues(bearing, target, tilt, zoom);
+                      ^^^^^^^^^^
+/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/src/location.dart:56:23: Error: The method 'hashValues' isn't defined for the type 'LatLng'.
+ - 'LatLng' is from 'package:mapbox_gl_platform_interface/mapbox_gl_platform_interface.dart' ('/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/mapbox_gl_platform_interface.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'hashValues'.
+  int get hashCode => hashValues(latitude, longitude);
+                      ^^^^^^^^^^
+/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/src/location.dart:109:23: Error: The method 'hashValues' isn't defined for the type 'LatLngBounds'.
+ - 'LatLngBounds' is from 'package:mapbox_gl_platform_interface/mapbox_gl_platform_interface.dart' ('/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/mapbox_gl_platform_interface.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'hashValues'.
+  int get hashCode => hashValues(southwest, northeast);
+                      ^^^^^^^^^^
+/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/src/location.dart:167:23: Error: The method 'hashValues' isn't defined for the type 'LatLngQuad'.
+ - 'LatLngQuad' is from 'package:mapbox_gl_platform_interface/mapbox_gl_platform_interface.dart' ('/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/mapbox_gl_platform_interface.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'hashValues'.
+  int get hashCode => hashValues(topLeft, topRight, bottomRight, bottomLeft);
+                      ^^^^^^^^^^
+/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/src/ui.dart:146:23: Error: The method 'hashValues' isn't defined for the type 'MinMaxZoomPreference'.
+ - 'MinMaxZoomPreference' is from 'package:mapbox_gl_platform_interface/mapbox_gl_platform_interface.dart' ('/home/jules/.pub-cache/hosted/pub.dev/mapbox_gl_platform_interface-0.16.0/lib/mapbox_gl_platform_interface.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'hashValues'.
+  int get hashCode => hashValues(minZoom, maxZoom);
+                      ^^^^^^^^^^
