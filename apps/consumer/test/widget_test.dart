@@ -15,6 +15,12 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
+    // Verify that the title is correct.
+    expect(find.text('Backcountry Stability Engine'), findsOneWidget);
+
+    // Verify that the observation label is correct.
+    expect(find.text('Recorded Stability Observations:'), findsOneWidget);
+
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);
